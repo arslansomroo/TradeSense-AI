@@ -1,0 +1,2 @@
+# TradeSense-AI
+trading bot
