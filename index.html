@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Crypto Signal Bot — Advanced</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="card">
+    <h2 class="title">AI Crypto Signal Bot</h2>
+
+    <label>Trading Pair:</label>
+    <select id="symbol">
+      <option>BTC/USDT</option>
+      <option>ETH/USDT</option>
+      <option>BNB/USDT</option>
+      <option>SOL/USDT</option>
+      <option>XRP/USDT</option>
+    </select>
+
+    <label>Timeframe:</label>
+    <div class="timeframe">
+      <button class="tf-btn active">1m</button>
+      <button class="tf-btn">5m</button>
+      <button class="tf-btn">15m</button>
+      <button class="tf-btn">1h</button>
+      <button class="tf-btn">4h</button>
+    </div>
+
+    <label>Suggested Leverage:</label>
+    <div id="auto_lev" class="suggest-box">--</div>
+
+    <button id="genBtn" class="main-btn">Generate Signal</button>
+
+    <h3 class="fs-title">Final Signal:</h3>
+    <div id="ai_signal" class="signal-box">NEUTRAL</div>
+    <p id="confidence_text">Confidence: --%</p>
+
+    <!-- Trade Duration -->
+    <p id="trade_timer" style="text-align:center; margin-top:5px; font-size:16px; color:#10f1c6;">
+      ⏳ Trade Duration: --
+    </p>
+
+    <!-- chart removed -->
+
+    <div class="extra">
+      <h4>Position (approx.)</h4>
+      <div id="pos_box" class="small-box">--</div>
+
+      <h4>Matched Rules</h4>
+      <div id="matched_box" class="matched-box">No matches yet</div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
